@@ -1,0 +1,174 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Researchers · [Des-fi]XR</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Bruce Sterling"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Researchers · [Des-fi]XR"/><meta property="og:type" content="website"/><meta property="og:url" content="https://des-fi-xr.com/"/><meta property="og:description" content="## Bruce Sterling"/><meta property="og:image" content="https://des-fi-xr.com/img/favicon.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://des-fi-xr.com/img/favicon.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://des-fi-xr.com/blog/atom.xml" title="[Des-fi]XR Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://des-fi-xr.com/blog/feed.xml" title="[Des-fi]XR Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo.svg" alt="[Des-fi]XR"/><h2 class="headerTitleWithLogo">[Des-fi]XR</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/doc1" target="_self">Conferences &amp; Events</a></li><li class="siteNavGroupActive"><a href="/docs/doc2" target="_self">Journals</a></li><li class="siteNavGroupActive"><a href="/docs/doc3" target="_self">Books</a></li><li class="siteNavGroupActive"><a href="/docs/doc4" target="_self">Thesis</a></li><li class="siteNavGroupActive siteNavItemActive"><a href="/docs/doc5" target="_self">People</a></li><li class="siteNavGroupActive"><a href="/docs/doc6" target="_self">Links</a></li><li class="siteNavGroupActive"><a href="/docs/doc7" target="_self">Media</a></li><li class=""><a href="/blog/" target="_self">Updates</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>People</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Conferences &amp; Events</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/doc1">Conferences &amp; Events Info</a></li><li class="navListItem"><a class="navItem" href="/docs/doc1-1">Conference Papers</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Journals</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/doc2">Journals</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Books</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/doc3">Books</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Thesis</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/doc4">PhD Thesis</a></li><li class="navListItem"><a class="navItem" href="/docs/doc4-1">Master Thesis</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">People</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docs/doc5">Researchers</a></li><li class="navListItem"><a class="navItem" href="/docs/doc5-1">Groups &amp; Labs</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Links</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/doc6">Useful Links</a></li><li class="navListItem"><a class="navItem" href="/docs/doc6-1">News</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Media</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/doc7">Media</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Researchers</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="bruce-sterling"></a><a href="#bruce-sterling" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Bruce Sterling</h2>
+<p>Professor of New Media and Science Fiction at The European Graduate School.
+Science fiction writer, net critic, and internationally recognized cyberspace theorist.
+Research Interest: Science fiction, design fiction, cyberspace.</p>
+<p><a
+  href="https://egs.edu/biography/bruce-sterling/"
+  target="_blank"><em>More Info</em>
+</a>
+<br></p>
+<h2><a class="anchor" aria-hidden="true" id="don-ihde"></a><a href="#don-ihde" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Don Ihde</h2>
+<p>Professor of Philosophy
+Research Interest: Postphenomenology, Phenomenology, Technoscience.</p>
+<p><a
+  href="https://en.wikipedia.org/wiki/Don_Ihde"
+  target="_blank"><em>More Info</em>
+</a>
+<br></p>
+<h2><a class="anchor" aria-hidden="true" id="joseph-lindley"></a><a href="#joseph-lindley" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Joseph Lindley</h2>
+<p>Lancaster University.
+Research Interest: Interested in the role that Design Research plays in understanding rapidly-changing relatonships between individuals, society, and technology.
+<a
+  href="https://www.lancaster.ac.uk/security-lancaster/about/all-staff/joseph-lindley#projects"
+  target="_blank"><em>More Info</em>
+</a>
+<br></p>
+<h2><a class="anchor" aria-hidden="true" id="julian-bleecker"></a><a href="#julian-bleecker" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Julian Bleecker</h2>
+<p>Near Future Laboratory
+Research Interest: Design Fiction</p>
+<p><a
+  href="https://www.julianbleecker.com"
+  target="_blank"><em>More Info</em>
+</a>
+<br></p>
+<h2><a class="anchor" aria-hidden="true" id="mark-weiser"></a><a href="#mark-weiser" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mark Weiser</h2>
+<p>Weiser was chief scientist at Xerox PARC in the United States and is widely considered to be the father of ubiquitous computing.
+Research Interest: Ubiquitous computing.</p>
+<p><a
+  href="https://en.wikipedia.org/wiki/Mark_Weiser"
+  target="_blank"><em>More Info</em>
+</a>
+<br></p>
+<h2><a class="anchor" aria-hidden="true" id="paul-clarke"></a><a href="#paul-clarke" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Paul Clarke</h2>
+<p>University of Bristol
+Research Interest: Performance and Digital Tools for Imagining Preferable Futures</p>
+<p><a
+  href="https://www.bristol.ac.uk/people/person/Paul-Clarke-2d4d0f1f-5488-4240-9f22-1caa5782a556/"
+  target="_blank"><em>More Info</em>
+</a>
+<br></p>
+<h2><a class="anchor" aria-hidden="true" id="paul-coulton"></a><a href="#paul-coulton" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Paul Coulton</h2>
+<p>Lancaster University.
+Professor of Speculative and Game Design.
+Research Interest: Speculative design, design fiction.</p>
+<p><a
+  href="https://www.lancaster.ac.uk/lica/about/people/paul-coulton"
+  target="_blank"><em>More Info</em>
+</a>
+<br></p>
+<h2><a class="anchor" aria-hidden="true" id="peter-paul-verbeek"></a><a href="#peter-paul-verbeek" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Peter-Paul Verbeek</h2>
+<p>Professor of Philosophy of Technology at the Department of Philosophy of the University of Twente.
+Research Interest: Postphenomenology, Theorizing Human-Technology Relations, Ethics and Politics of Human-Technology Relations, Technology and Scientific Practice, Philosophy of Design, Art, and Technology.</p>
+<p><a
+  href="https://ppverbeek.org/"
+  target="_blank"><em>More Info</em>
+</a>
+<br></p>
+<h2><a class="anchor" aria-hidden="true" id="robert-rosenberger"></a><a href="#robert-rosenberger" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Robert Rosenberger</h2>
+<p>Associate professor in the School of Public Policy at the Georgia Institute of Technology.
+Research Interest: Postphenomenology, the ways that our everyday technologies shape our experience.</p>
+<p><a
+  href="https://rosenberger.spp.gatech.edu"
+  target="_blank"><em>More Info</em>
+</a>
+<br></p>
+<h2><a class="anchor" aria-hidden="true" id="theresa-jean-tanenbaum"></a><a href="#theresa-jean-tanenbaum" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Theresa Jean Tanenbaum</h2>
+<p>University of California, Irvine, Department of Informatics.
+Research Interest: Participatory, interactive storytelling.</p>
+<p><a
+  href="https://www.informatics.uci.edu/explore/faculty-profiles/tess-tanenbaum/"
+  target="_blank"><em>More Info</em>
+</a>
+<br></p>
+<h2><a class="anchor" aria-hidden="true" id="thomas-markussen"></a><a href="#thomas-markussen" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Thomas Markussen</h2>
+<p>University of Southern Denmark
+Research Interest: How design can be used as a political and critical aesthetic practice, notably in the fields of social design, design activism and design fiction</p>
+<p><a
+  href="https://portal.findresearcher.sdu.dk/en/persons/thma"
+  target="_blank"><em>More Info</em>
+</a>
+<br></p>
+<h2><a class="anchor" aria-hidden="true" id="walter-ong"></a><a href="#walter-ong" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Walter Ong</h2>
+<p>Known for his work in Renaissance literature, intellectual history and the evolution of consciousness, was a Jesuit, a scholar and a teacher.
+Research Interest: His major interest was in exploring how the transition from orality to literacy influenced culture and changed human consciousness.</p>
+<p><a
+  href="https://en.wikipedia.org/wiki/Walter_J._Ong"
+  target="_blank"><em>More Info</em>
+</a>
+<br></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/doc4-1"><span class="arrow-prev">← </span><span>Master Thesis</span></a><a class="docs-next button" href="/docs/doc5-1"><span>Groups &amp; Labs</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#bruce-sterling">Bruce Sterling</a></li><li><a href="#don-ihde">Don Ihde</a></li><li><a href="#joseph-lindley">Joseph Lindley</a></li><li><a href="#julian-bleecker">Julian Bleecker</a></li><li><a href="#mark-weiser">Mark Weiser</a></li><li><a href="#paul-clarke">Paul Clarke</a></li><li><a href="#paul-coulton">Paul Coulton</a></li><li><a href="#peter-paul-verbeek">Peter-Paul Verbeek</a></li><li><a href="#robert-rosenberger">Robert Rosenberger</a></li><li><a href="#theresa-jean-tanenbaum">Theresa Jean Tanenbaum</a></li><li><a href="#thomas-markussen">Thomas Markussen</a></li><li><a href="#walter-ong">Walter Ong</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/favicon.svg" alt="[Des-fi]XR" width="66" height="58"/></a><div><h5>Resources</h5><a href="/docs/en/doc1.html">Conferences &amp; Events</a><a href="/docs/en/doc2.html">Journals</a><a href="/docs/en/doc3.html">Books</a><a href="/docs/en/doc8.html">Websites</a><a href="/docs/en/doc8.html">Media</a></div><div><h5>About Begum</h5><a href="https://begum.info/" target="_blank" rel="noreferrer noopener">Portfolio</a><a href="https://www.linkedin.com/in/begummoralioglu/" target="_blank" rel="noreferrer noopener">LinkedIn</a><a href="https://twitter.com/BegumMoralioglu" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Updates</a><a href="/docs/en/doc9.html">Contact Us</a></div></section><section class="copyright">Copyright © 2022 Begum Moralioglu</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '0707829b40adc38f68730122a0e6bc5a',
+                indexName: 'www.des-fi-xr.com',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
