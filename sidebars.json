@@ -1,0 +1,26 @@
+{
+  "conferences": {
+    "Conferences & Events": ["conferences/intro", "conferences/papers"]
+  },
+  "journals": {
+    "Journals": ["journals/intro"]
+  },
+  "books": {
+    "Books": ["books/intro"]
+  },
+  "Thesis": {
+    "Thesis": ["thesis/intro", "thesis/master"]
+  },
+  "people": {
+    "People": ["people/researchers", "people/groups-labs"]
+  },
+  "links": {
+    "Links": ["links/useful", "links/news"]
+  },
+  "media": {
+    "Media": ["media/intro"]
+  },
+  "docs-other": {
+    "First Category": ["doc12", "doc13"]
+  }
+}

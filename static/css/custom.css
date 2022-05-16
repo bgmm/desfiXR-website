@@ -1,0 +1,78 @@
+/* your custom css */
+/*header */
+.fixedHeaderContainer {
+  background: #fff;
+}
+
+.fixedHeaderContainer li a {
+  color: #000000 !important;
+}
+
+.fixedHeaderContainer ul li a:hover {
+   background: #FFE820 !important;
+}
+
+.fixedHeaderContainer .siteNavGroupActive.siteNavItemActive a {
+  color: white !important;
+}
+
+.fixedHeaderContainer .siteNavItemActive a {
+  color: white !important;
+}
+
+.fixedHeaderContainer .headerTitleWithLogo {
+  display: none !important;
+}
+
+.homeContainer .wrapper {
+  max-width:  none !important;
+
+}
+
+.homeContainer .homeWrapper {
+  padding: 0px !important;
+}
+
+.video-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.post h6 {
+  text-align: center !important;
+}
+
+.navigationSlider .slidingNav ul li.siteNavGroupActive.siteNavItemActive > a  {
+  background-color: #FFE820 !important;
+  color: black !important;
+}
+
+.navigationSlider .slidingNav ul li a:hover {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.navigationSlider .slidingNav ul li.siteNavGroupActive > a {
+  background-color: #FFE820 !important;
+  color: black !important;
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+  .fixedHeaderContainer ul li a:hover {
+     background: #302a69 !important;
+     color: white !important;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1500px) {
+}
