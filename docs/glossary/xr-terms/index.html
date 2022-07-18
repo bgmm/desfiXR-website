@@ -1,0 +1,209 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>XR Terms · [Des-fi]XR</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Extended Reality"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="XR Terms · [Des-fi]XR"/><meta property="og:type" content="website"/><meta property="og:url" content="https://des-fi-xr.com/"/><meta property="og:description" content="## Extended Reality"/><meta property="og:image" content="https://des-fi-xr.com/img/favicon.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://des-fi-xr.com/img/favicon.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://des-fi-xr.com/blog/atom.xml" title="[Des-fi]XR Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://des-fi-xr.com/blog/feed.xml" title="[Des-fi]XR Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo.svg" alt="[Des-fi]XR"/><h2 class="headerTitleWithLogo">[Des-fi]XR</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/conferences/intro" target="_self">Conferences &amp; Events</a></li><li class=""><a href="/docs/journals/intro" target="_self">Journals</a></li><li class=""><a href="/docs/books/intro" target="_self">Books</a></li><li class=""><a href="/docs/thesis/intro" target="_self">Thesis</a></li><li class=""><a href="/docs/people/researchers" target="_self">People</a></li><li class=""><a href="/docs/links/useful" target="_self">Links</a></li><li class=""><a href="/docs/media/intro" target="_self">Media</a></li><li class=""><a href="/blog/" target="_self">Updates</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Glossary</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Glossary</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docs/glossary/xr-terms">XR Terms</a></li><li class="navListItem"><a class="navItem" href="/docs/glossary/design-fiction-terms">Design Fiction Terms</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">XR Terms</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="extended-reality"></a><a href="#extended-reality" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Extended Reality</h2>
+<ol>
+<li>An environment or experience that combines virtual and physical realities through the use of computer technology or wearable technologies, as in augmented reality, mixed reality, virtual reality, or any similar mediated reality.</li>
+</ol>
+<p><a
+  href="https://www.dictionary.com/browse/extended-reality"
+  target="_blank"><em>Dictionary</em>
+</a></p>
+<ol start="2">
+<li><p>Extended reality (XR) is an umbrella term for any technology that alters reality by adding digital elements to the physical or real-world environment to any extent and includes, but is not limited to, augmented reality (AR), mixed reality (MR) and virtual reality (VR).</p>
+<p>Any new technology that blends the physical and virtual world will also be categorized as XR. The “X” in XR stands for any variable—any letter of the alphabet—that may be used in the future for such technologies.</p>
+<p>Therefore, the term extended reality does not refer to any specific technology; it includes any existing or new technologies that may be created in the future that alter reality, either by blending the digital and the physical world or by creating a fully virtual environment.</p></li>
+</ol>
+<p><a
+  href="https://www.interaction-design.org/literature/topics/extended-reality-xr"
+  target="_blank"><em>Interaction Design Foundation</em>
+</a>
+<br></p>
+<h2><a class="anchor" aria-hidden="true" id="virtual-reality"></a><a href="#virtual-reality" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Virtual Reality</h2>
+<ol>
+<li>The computer-generated simulation of a three-dimensional image or environment that can be interacted with in a seemingly real or physical way by a person using special electronic equipment, such as a helmet with a screen inside or gloves fitted with sensors.</li>
+</ol>
+<p><a
+  href="https://www.lexico.com/definition/virtual_reality"
+  target="_blank"><em>Oxford Languages</em>
+</a></p>
+<ol start="2">
+<li>Virtual Reality (VR), the use of computer modeling and simulation that enables a person to interact with an artificial three-dimensional (3-D) visual or other sensory environment. VR applications immerse the user in a computer-generated environment that simulates reality through the use of interactive devices, which send and receive information and are worn as goggles, headsets, gloves, or body suits. In a typical VR format, a user wearing a helmet with a stereoscopic screen views animated images of a simulated environment.</li>
+</ol>
+<p><a
+  href="https://www.britannica.com/technology/virtual-reality"
+  target="_blank"><em>Britannica</em>
+</a>
+<br></p>
+<h2><a class="anchor" aria-hidden="true" id="augmented-reality"></a><a href="#augmented-reality" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Augmented Reality</h2>
+<ol>
+<li>A technology that superimposes a computer-generated image on a user's view of the real world, thus providing a composite view.</li>
+</ol>
+<p><a
+  href="https://www.lexico.com/definition/augmented_reality"
+  target="_blank"><em>Oxford Languages</em>
+</a></p>
+<ol start="2">
+<li>Augmented Reality, in computer programming, a process of combining or “augmenting” video or photographic displays by overlaying the images with useful computer-generated data. The earliest applications of augmented reality were almost certainly the “heads-up-displays” (HUDs) used in military airplanes and tanks, in which instrument panel-type information is projected onto the same cockpit canopy or viewfinder through which a crew member sees the external surroundings.</li>
+</ol>
+<p><a
+  href="https://www.britannica.com/technology/augmented-reality"
+  target="_blank"><em>Britannica</em>
+</a>
+<br></p>
+<h2><a class="anchor" aria-hidden="true" id="mixed-reality"></a><a href="#mixed-reality" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mixed Reality</h2>
+<ol>
+<li>A medium consisting of immersive computer-generated environments in which elements of a physical and virtual environment are combined.</li>
+</ol>
+<p><a
+  href="https://www.lexico.com/definition/mixed_reality"
+  target="_blank"><em>Oxford Languages</em>
+</a></p>
+<ol start="2">
+<li><p>Mixed Reality (MR) visual displays, a particular subset of Virtual Reality (VR) related technologies that involve the merging of real and virtual worlds somewhere along the &quot;virtuality continuum&quot; which connects completely real environments to completely virtual ones.</p>
+<p>The most straightforward way to view a Mixed Reality environment, therefore, is one in which real world and virtual world objects are presented together within a single display, that is, anywhere between the extrema of the virtuality continuum.</p></li>
+</ol>
+<p><a
+  href="https://www.researchgate.net/publication/231514051_A_Taxonomy_of_Mixed_Reality_Visual_Displays"
+  target="_blank"><em>Milgram, P., &amp; Kishino, F. (1994). A taxonomy of mixed reality visual displays. IEICE TRANSACTIONS on Information and Systems, 77(12), 1321–1329.</em>
+</a>
+<br></p>
+<h2><a class="anchor" aria-hidden="true" id="metaverse"></a><a href="#metaverse" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Metaverse</h2>
+<ol>
+<li>A virtual-reality space in which users can interact with a computer-generated environment and other users.</li>
+</ol>
+<p><a
+  href="https://www.lexico.com/en/definition/metaverse"
+  target="_blank"><em>Oxford Languages</em>
+</a></p>
+<ol start="2">
+<li>The term “metaverse&quot; originates from the science fiction novel, Snow Crash written by Neal Stephenson in 1992. Metaverse is a combination of “meta&quot; (meaning beyond) and the stem “verse&quot; from &quot;universe&quot;, denoting the next-generation Internet in which the users, as avatars, can interact with each other and software applications in a three dimensional (3D) virtual space. There has been approximately 30 years’ development behind the evolution of this term.</li>
+</ol>
+<p><a
+  href="https://doi.org/10.1145/3474085.3479238"
+  target="_blank"><em>Duan, H., Li, J., Fan, S., Lin, Z., Wu, X., and Cai, W.</em>
+</a>
+<br></p>
+<h2><a class="anchor" aria-hidden="true" id="spatial-computing"></a><a href="#spatial-computing" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Spatial Computing</h2>
+<ol>
+<li><p>Simon Greenwold defines spatial computing as human interaction with a machine in which the machine retains and manipulates referents to real objects and spaces.</p>
+<p>A system that allows users to place objects from their environments into a machine for digitization is spatial computing. Spatial computing differs from related fields such as 3D modeling and digital design in that it requires the forms and spaces it deals with to pre-exist and have real-world valence. It is not enough that the screen be used to represent a virtual space—it must be meaningfully related to an actual place.</p></li>
+</ol>
+<p><em>Greenwold, S. (2003). Spatial Computing. Doctoral Dissertation, Massachusetts Institute of Technology.</em></p>
+<ol start="2">
+<li><p>Spatial computing is a set of ideas and technologies that transform our lives by understanding the physical world, knowing and communicating our relation to places in that world, and navigating through those places. Uber, Google Maps, and Global Positioning System (GPS) devices are applications of spatial computing that most people will recognize, but the applications and technologies have a reach much wider than these consumer applications.</p>
+<p>The definition of spatial thus includes not only physical space but also time.</p>
+<p>Spatial computing began as a way to represent Earth, but the work of today and tomorrow will continue to evolve beyond the surface of our planet.</p></li>
+</ol>
+<p><a
+  href="https://mitpress.mit.edu/books/spatial-computing"
+  target="_blank"><em>Shekhar, S., &amp; Vold, P.</em>
+</a>
+<br></p>
+<h2><a class="anchor" aria-hidden="true" id="webxr"></a><a href="#webxr" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>WebXR</h2>
+<ol>
+<li>WebXR is an API for web content and apps to use to interface with mixed reality hardware such as VR headsets and glasses with integrated augmented reality features. This includes both managing the process of rendering the views needed to simulate the 3D experience and the ability to sense the movement of the headset (or other motion-sensing gear) and provide the needed data to update the imagery shown to the user.</li>
+</ol>
+<p><a
+  href="https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API/Fundamentals"
+  target="_blank"><em>Mozilla Developer</em>
+</a></p>
+<ol start="2">
+<li>Immersive computing introduces strict requirements for high-precision, low-latency communication in order to deliver an acceptable experience. It also brings unique security concerns for a platform like the web. The WebXR Device API provides the interfaces necessary to enable developers to build compelling, comfortable, and safe immersive applications on the web across a wide variety of hardware form factors.</li>
+</ol>
+<p><a
+  href="https://www.w3.org/TR/webxr/Overview.html"
+  target="_blank"><em>The World Wide Web Consortium (W3C)</em>
+</a>
+<br></p>
+<h2><a class="anchor" aria-hidden="true" id="ubiquitous-computing"></a><a href="#ubiquitous-computing" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ubiquitous Computing</h2>
+<p>(also known as Pervasive Computing and Ambient Intelligence)</p>
+<ol>
+<li>A proposed development of computing in which computers are sufficiently small and inexpensive to be embedded frequently in everyday objects.</li>
+</ol>
+<p><a
+  href="https://www.lexico.com/definition/ubiquitous_computing"
+  target="_blank"><em>Oxford Languages</em>
+</a></p>
+<ol start="2">
+<li>Ubiquitous computing has as its goal the nonintrusive availability of computers throughout the physical environment, virtually, if not effectively, invisible to the user. Unlike virtual reality, ubiquitous computing will integrate information displays into the everyday physical world. Its proponents value the nuances of the real world and aim only to augment them. And unlike current personal digital assistants, ubiquitous computing will be a world of fully connected devices, with cheap wireless networks; it will not require that you carry around a PDA, since information will be accessible everywhere.</li>
+</ol>
+<p><a
+  href="https://doi.org/10.1109/2.237456"
+  target="_blank"><em>Weiser, M. (1993). Hot Topics - Ubiquitous Computing. Computer 26, 10.
+</em>
+</a>
+<br></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-next button" href="/docs/glossary/design-fiction-terms"><span>Design Fiction Terms</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#extended-reality">Extended Reality</a></li><li><a href="#virtual-reality">Virtual Reality</a></li><li><a href="#augmented-reality">Augmented Reality</a></li><li><a href="#mixed-reality">Mixed Reality</a></li><li><a href="#metaverse">Metaverse</a></li><li><a href="#spatial-computing">Spatial Computing</a></li><li><a href="#webxr">WebXR</a></li><li><a href="#ubiquitous-computing">Ubiquitous Computing</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/favicon.svg" alt="[Des-fi]XR" width="66" height="58"/></a><div><h5>Resources</h5><a href="/docs/conferences/intro">Conferences &amp; Events</a><a href="/docs/journals/intro">Journals</a><a href="/docs/books/intro">Books</a><a href="/docs/links/useful">Websites</a><a href="/docs/media/intro">Media</a></div><div><h5>About Begum</h5><a href="https://begum.info/" target="_blank" rel="noreferrer noopener">Portfolio</a><a href="https://www.linkedin.com/in/begummoralioglu/" target="_blank" rel="noreferrer noopener">LinkedIn</a><a href="https://twitter.com/BegumMoralioglu" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Updates</a><a href="/docs/glossary/xr-terms">Glossary</a><a href="/docs/contact">Contact Us</a><a href="/docs/subscribe">Subscribe</a></div></section><section class="copyright">Copyright © 2022 Begum Moralioglu</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '0707829b40adc38f68730122a0e6bc5a',
+                indexName: 'www.des-fi-xr.com',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
